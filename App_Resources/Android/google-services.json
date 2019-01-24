@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "722842753199",
+    "firebase_url": "https://angular-nativescript-firebase.firebaseio.com",
+    "project_id": "angular-nativescript-firebase",
+    "storage_bucket": "angular-nativescript-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722842753199:android:b08e8643486212d9",
+        "android_client_info": {
+          "package_name": "org.nativescript.angularnativescriptfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722842753199-gsshj0olr763jt0u0t34n6qlo7lntm36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaod1OpCk7NYOezv2TTJTsmmLc5zy_Xm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

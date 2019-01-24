@@ -1,1 +1,8 @@
-  <page-router-outlet></page-router-outlet>
+<StackLayout>
+  <Label class="h2" text="Books"></Label>
+
+  <StackLayout *ngFor="let book of books$ | async">
+    <Label text="{{ book.Title }} by {{ book.Author }}"></Label>
+  </StackLayout>
+
+</StackLayout>
