@@ -1,0 +1,31 @@
+<div>
+
+  <div class="m-16">
+    Books
+  </div>
+
+  <div class="m-16">
+    <ng-container *ngIf="books$ | async as books; else loading">
+      <ng-container *ngIf="books.length; else empty">
+
+        <div class="book" *ngFor="let book of books">
+          {{ book.Title }} by {{ book.Author }}
+        </div>
+
+      </ng-container>
+    </ng-container>
+  </div>
+
+</div>
+
+<ng-template #loading>
+  <div>
+    Loading books, please wait
+  </div>
+</ng-template>
+
+<ng-template #empty>
+  <div>
+    The library is empty
+  </div>
+</ng-template>

@@ -2,3 +2,12 @@
 
 // Import common styles
 @import 'app-common';
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,31 @@
+<StackLayout>
+
+  <StackLayout class="m-16">
+    <Label text="Books"></Label>
+  </StackLayout>
+
+  <StackLayout class="m-16">
+    <ng-container *ngIf="books$ | async as books; else loading">
+      <ng-container *ngIf="books.length; else empty">
+
+        <StackLayout class="book" *ngFor="let book of books">
+          <Label text="{{ book.Title }} by {{ book.Author }}"></Label>
+        </StackLayout>
+
+      </ng-container>
+    </ng-container>
+  </StackLayout>
+
+</StackLayout>
+
+<ng-template #loading>
+  <StackLayout>
+    <Label text="Loading books, please wait"></Label>
+  </StackLayout>
+</ng-template>
+
+<ng-template #empty>
+  <StackLayout>
+    <Label text="The library is empty"></Label>
+  </StackLayout>
+</ng-template>
