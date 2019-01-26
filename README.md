@@ -1,7 +1,5 @@
 ## angular-nativescript-firebase
 
----
-
 ### Installation instructions
 
 ```
